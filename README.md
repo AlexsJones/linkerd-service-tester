@@ -30,8 +30,10 @@ charlie      2/2   100.00%   2.0rps           1ms           1ms           1ms   
 
 ![](images/1.png)
 
-![](images/2.png)
 
+![](images/3.png)
+
+![](images/2.png)
 
 ## Custom install
 
