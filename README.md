@@ -50,6 +50,7 @@ This will split the beta service and allow for you to test traffic splitting...
 
 `kubectl apply -f resources/`
 
+![](images/4.png)
 
 ## Custom install
 
