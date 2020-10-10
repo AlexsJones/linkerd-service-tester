@@ -44,6 +44,13 @@ charlie      2/2   100.00%   2.0rps           1ms           1ms           1ms   
 
 ![](images/2.png)
 
+## Activate traffic splitting
+
+This will split the beta service and allow for you to test traffic splitting...
+
+`kubectl apply -f resources/`
+
+
 ## Custom install
 
 Customise to fit your usecase and modify to use your own image based on this code...
