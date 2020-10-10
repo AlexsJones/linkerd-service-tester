@@ -10,6 +10,15 @@ You should be able to install this and see connections between alpha/beta/charli
 - Uses HTTP/2
 - Creates four basic GRPC services that talk to each other across a couple of namespaces
 
+This uses template metadata annotations to enable linkerd injection:
+```
+spec:
+  template:
+    metadata:
+      annotations:
+        linkerd.io/inject: enabled
+```
+
 It has proven useful for sanity checks... ✨
 
 ## Install
