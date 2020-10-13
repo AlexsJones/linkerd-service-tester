@@ -21,6 +21,9 @@ spec:
 
 It has proven useful for sanity checks... ✨
 
+![](images/linkerd-gitops.png)
+
+
 ## Install
 
 ```
