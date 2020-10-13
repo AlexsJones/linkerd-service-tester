@@ -1,9 +1,9 @@
-{{ range $n , $value := .Values.deployments }}
+{{ range $n , $value := .Values.namespaces }}
 apiVersion: v1
 kind: Namespace
 metadata:
   annotations:
     linkerd.io/inject: enabled
-  name: {{ $value.namespace }}
+  name: {{ $value }}
 ---
 {{ end }}
