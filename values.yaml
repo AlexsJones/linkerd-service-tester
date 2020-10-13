@@ -9,7 +9,6 @@ deployments:
     namespace: foo
     replicaCount: 2
     port: 9000
-    gateway: linkerd-ingressgateway.linkerd-system.svc.cluster.local
     command: "/bin/ist -s 0.0.0.0:9000 -t beta:9001"
     image:
       repository: tibbar/linkerd-service-tester:latest
@@ -19,7 +18,6 @@ deployments:
     namespace: foo
     replicaCount: 2
     port: 9001
-    gateway: linkerd-ingressgateway.linkerd-system.svc.cluster.local
     command: "/bin/ist -s 0.0.0.0:9001 -t charlie:9000"
     image:
       repository: tibbar/linkerd-service-tester:latest
@@ -29,7 +27,6 @@ deployments:
     namespace: foo
     replicaCount: 2
     port: 9000
-    gateway: linkerd-ingressgateway.linkerd-system.svc.cluster.local
     command: "/bin/ist -s 0.0.0.0:9000 -t delta:9001"
     image:
       repository: tibbar/linkerd-service-tester:latest
@@ -39,7 +36,6 @@ deployments:
     namespace: bar
     replicaCount: 2
     port: 9001
-    gateway: linkerd-ingressgateway.linkerd-system.svc.cluster.local
     command: "/bin/ist -s 0.0.0.0:9001 -t alpha.foo.svc.cluster.local:9000"
     image:
       repository: tibbar/linkerd-service-tester:latest
