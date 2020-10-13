@@ -29,7 +29,7 @@ deployments:
     namespace: foo
     replicaCount: 2
     port: 9000
-    command: "/bin/ist -s 0.0.0.0:9000 -t delta:9001"
+    command: "/bin/ist -s 0.0.0.0:9000 -t delta.foo.svc.cluster.local:9001"
     image:
       repository: tibbar/linkerd-service-tester:latest
       pullPolicy: IfNotPresent
